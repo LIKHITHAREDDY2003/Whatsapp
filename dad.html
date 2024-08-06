@@ -1,0 +1,475 @@
+
+       
+      
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/ac6ee84b93.js" crossorigin="anonymous"></script>
+      <style>
+        .container {
+          top:0px;
+          height: 520px;
+          width: 350px;
+          position: absolute;
+          left: 0px;
+          background-image: url(https://cdn.wallpapersafari.com/27/32/jt4AoG.jpg);
+          background-size: cover;
+          background-position-x: center;
+          object-fit: cover;
+          background-repeat: no-repeat;
+        }
+        .top1 {
+          width: 350px;
+          height: 50px;
+          border: 1px solid;
+          position: fixed;
+          margin-right: 5px;
+          background-color: rgb(0, 128, 92);
+          z-index: 10;
+        }
+        .dp {
+           position: absolute;
+           border-radius: 30px;
+           left: 0px;
+           top: 0px;
+           z-index: 15; 
+        }
+        .dp img{
+          position: absolute;
+          border-radius: 50px;
+          left:30px;
+          top:0px;
+        }
+        .likki {
+          position: absolute;
+          z-index: 20; 
+          display: none;
+          top: 30px;  
+          left:20px;
+        }
+        .dp:hover .likki {
+          display: block;
+        }
+        .top {
+          position: fixed;
+          z-index: 1;
+        }
+        .left {
+          position: absolute;
+          top: 10px;
+          left:0px
+        }
+         pre {
+          position: absolute;
+          top:-15px; 
+          left: 75px;
+          font-size: large;
+        }
+        .right {
+         position: absolute;
+         top:13px;
+         right:80px;
+        }
+        #dots{
+          position: absolute;
+          top:12px;
+          left: 320px;
+          cursor: pointer;
+          font-size:21px;
+          z-index: 100;
+        }
+        #dots:hover{
+          color:grey
+        }
+        .anchor>a:focus-within {
+          display: block;
+        } 
+        .anchor {
+          background-color:lavenderblush;
+          border: solid 1px;
+          position:absolute;
+          width: 160px;
+          left:-160px;
+          top:40px;
+          font-size:medium;
+          border:none;
+          display: none;
+          z-index: 100;
+          padding: 2px;
+         } 
+         a:focus, a:active {
+          outline: none;
+          background: none;
+          border: none;
+        }
+        
+        .anchor a{
+          text-decoration: none;
+          color:black;
+          display: block;
+          margin:2px;
+          width:200px;
+        }
+        #div >.anchor:focus-within{
+          display:block;
+        } 
+        #dots:hover .anchor {
+          display: block;
+        }
+        .cl{
+          position: absolute;
+          top:11px;
+          left:280px;
+        }
+        .call {
+          cursor: pointer;
+          color: black;
+        }
+        .call:hover {
+          color: gray;
+        }
+        .chat{
+         
+         position:absolute;
+         height:430px;
+         top:52px;
+         width:350px;
+         overflow-x: scroll;
+         scrollbar-width: none;
+         z-index: 1;
+       }
+       .abc {
+          padding:6px;
+          display:inline-block;
+          margin-left: 7px;
+          float:left;
+          left: 100px;
+           font-size: large;
+          border-radius: 7px;
+          background-color: lavender;
+          z-index: 5;
+        }
+       .abc1 {
+          font-size: large;
+          display:inline-block;
+          margin-right: 7px;
+          float:right;
+          padding:6px;
+          border-radius: 7px;
+          background-color: rgb(127, 255, 170);
+         z-index: 5;
+        }
+        .vh{
+          position:absolute;
+          left:10px;
+        }
+        .date1{
+          position:sticky;
+          left:120px;
+          top:11px;
+          width:100px;
+          background-color: rgb(184, 147, 206);
+          border:1px solid;
+          border-radius:30px;
+          z-index: 1;
+        }
+        .date2{
+          position:sticky;
+          left:120px;
+          top:11px;
+          width:100px;
+          background-color: rgb(184, 147, 206);
+          border:1px solid;
+          border-radius:30px;
+        }
+        .date3{
+          position:sticky;
+          left:120px;
+          top:11px;
+          width:100px;
+          background-color: rgb(184, 147, 206);
+          border:1px solid;
+          border-radius:30px;
+        }
+        .time{
+          font-size:11px;
+        }
+        .cat{
+          position:absolute ;
+          right:7px;
+          border-radius: 50%;
+        }
+        .lo{
+          position: absolute;
+          left:10px;
+          border-radius: 50%;
+        }
+        .l1{
+          position: absolute;
+          right:10px;
+          border-radius: 30%;
+        }
+       .bottom{
+          bottom: 89px;
+          position: fixed;
+          left:11px;
+          z-index: 1;
+        }
+        input {
+          position: absolute;
+          bottom:-90px;
+          left: -10px;;
+          height: 40px; 
+          padding: 0 10px;
+          border-radius: 20px; 
+          border: 1px solid rgb(209, 199, 199);
+          z-index: 1; 
+        } 
+        .emoji-picker {
+          display: none;
+          position: absolute;
+          bottom: -60px; 
+          left: -10px;
+          background: white;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          z-index: 10;
+          padding: 5px;
+        }
+        .emoji-picker button {
+          background: none;
+          border: none;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .emoji-picker button:hover {
+          background-color: #f0f0f0;
+        }
+        #mood-icon {
+          cursor: pointer;
+          position: absolute;
+          left:-4px;
+          bottom:-88px;
+          z-index: 1;
+        }
+        #mood-icon:hover ~.emoji-picker {
+          display: block;
+        }
+        .c:hover .emoji-picker,
+        #mood-icon:hover ~ .emoji-picker {
+         display: block;
+        }
+        .d {
+          position: absolute;
+          left:210px;
+          bottom: -66px;
+          z-index: 1;
+        }
+        .show-attachment {
+         cursor: pointer;
+         position: absolute;
+        }
+       .file-attachment {
+         position: absolute;
+         bottom: 14px;
+         right: 0px;
+         width: 130px;
+         background-color: white;
+         border: 1px solid #ddd;
+         border-radius: 5px;
+         padding: 10px;
+         display: none; 
+         z-index: 20;
+        cursor: pointer;
+        }
+       .file-attachment ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        }
+       .file-attachment li {
+         padding: 8px 0;
+       }
+       .file-attachment a {
+        text-decoration: none;
+        color: #333;
+        display: flex;
+        align-items: center;
+       }
+       .file-attachment i {
+        margin-right: 10px;
+       }
+       .show-attachment:hover + .file-attachment {
+        display: block;
+       }
+       .currency{
+       position: absolute;
+       left:240px;
+       z-index: 1;
+       bottom:-90px;
+       }  
+       .camera{
+        position: absolute;
+        left:270px;
+        z-index: 1;
+        bottom: -90px;
+       }
+       .mic {
+        position: absolute;
+        z-index: 1;
+        left:310px;
+        bottom: -98px;
+       }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+         <div class="top1">
+         <div class="left">
+              <span class="material-symbols-outlined">
+                arrow_back
+              </span>
+              <div class="dp">
+                <img src="./dadimage.jpg" width="44x">
+                   <div class="likki">
+                    <img src="./dadimage.jpg" width="250px">
+                   </div>
+                </div>
+             <pre><b> Dad </b>&#127757;</pre>
+               </div>
+           <div class="right">
+            <span class="material-symbols-outlined" id="video-call-icon">
+                  video_call
+                </span>
+              </div>
+             <div id="dots">
+                 <i  class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="anchor">
+               <a  href="#">.Media,links and docs </a>
+               <a href="#">.search </a>
+               <a href="#">.Disappearing meassages </a>
+               <a href="#">.wallpaper </a>
+               <a href="#">.more</a>
+               </div>
+              </div>
+              <div class="cl">
+              <span class="material-symbols-outlined call" title="busy" style="text-decoration: none;">call</span></div>
+           </div>
+        </div>
+      </div>
+      <div class="chat">
+
+          <div class="date1">12 jun 2024</div>
+          <div class="abc">
+            <span>Hlo chitti &#128522;</span>
+           </div><br><br>
+           <div class="abc1">
+             <span >ha daddy &#129303;</span>
+             <span class="time">12:40pm<i class="fa-solid fa-check-double done"></i>
+           </span>
+               </div><br><br>
+           <div class="abc">
+             tinnava
+           </div><br><br>
+           <div class="abc1">
+             <span>tinna miru</span>
+             <span class="time">12:40pm</span>
+           </div><br><br>
+           <div class="abc">
+            <span>tinnamu</span>
+            <span class="time">12:41pm</span>
+           </div><br><br>
+           <div class="abc">
+           akka ni chusi nerchuko
+           </div><br><br>
+
+           <div class="abc">
+           <span>tanaki job vacchindi</span>
+           <span class="time">12:42pm</span><br>
+           <img class="cat" src ="https://c.tenor.com/FJYXjsubH58AAAAC/kitty-kitten.gif" width="150px">
+           </div><br><br><br><br><br><br><br><br>
+           <div class="abc1">
+            <span>hoo dad ame vere <br> profession nadi vere&#128529;</span>
+            <span class="time">12:42pm<i class="fa-solid fa-check-double done"></i>
+            </span>
+           </div><br><br><br><br>
+           <div class="abc">
+            ilane anukuntu undu
+           </div><br><br>
+           <div class="abc">
+           <span>3 months varki job rakapothe<br> ni pani chepta</span>
+          
+           </div><br><br><br><br>
+          
+           <div class="abc1">
+            first bunny ki chpu vadu clg ki <br>velladam tappa anni chestadu
+            <span class="time">12:43pm<i class="fa-solid fa-check-double done"></i>
+            </span>
+           </div><br><br><br><br>
+           <div class="abc">
+           <span>vadu alago chaduvudu <br> nuvve chaduvali betaa</span> 
+          
+           </div><br><br><br>
+           <div class="abc1">
+            sare dad
+            <span class="time">12:45pm<i class="fa-solid fa-check-double done"></i>
+            </span>
+           </div><br><br><br>
+           <div class="abc1">
+               i will make u proud ok &#128522;
+               <span class="time">12:45pm<i class="fa-solid fa-check-double done"></i>
+               </span>
+              </div><br><br><br>
+              <div class="abc">
+               ok bye ra</div>
+              <br><br>
+               <div class="abc1">
+                 bye dad
+                 <span class="time">12:46pm<i class="fa-solid fa-check-double done"></i></div>
+     </div>
+         <div class="bottom">
+            <div class="input">
+            <input type="text" placeholder="&emsp;&emsp;&emsp;&emsp; Message" size="40" style="height: 25px;"></div> 
+            <div class="c">
+               <span id="mood-icon" class="material-symbols-outlined">mood</span>
+              <div class="emoji-picker">
+                <button>😀</button>
+                <button>😂</button>
+                 <button>😍</button>
+                 <button>😎</button> 
+                 <button>😭</button>  
+              </div>
+            </div>
+            <div class="d">
+             <span class="material-symbols-outlined show-attachment">
+                  attach_file
+                </span>
+                <div class="file-attachment">
+                  <ul>
+                    <li><i class="material-symbols-outlined">insert_drive_file</i> Document</a></li>
+                    <li><i class="material-symbols-outlined">camera_alt</i> Camera</a></li>
+                    <li><i class="material-symbols-outlined">photo_library</i> Gallery</a></li>
+                    <li><i class="material-symbols-outlined">location_on</i> Location</a></li>
+                    <li><i class="material-symbols-outlined">attach_money</i> Payment</a></li>
+                    <li><i class="material-symbols-outlined">poll</i> Poll</a></li>
+                  </ul>
+                </div>
+              </div>
+             <span class="material-symbols-outlined currency">
+                currency_rupee_circle
+              </span>
+              <span class="material-symbols-outlined camera" >
+                photo_camera
+              </span>
+            <div class="mic">
+              <img src="https://image.shutterstock.com/image-vector/whatsapp-send-voice-message-vector-260nw-787086673.jpg" width="27">
+            </div>
+       </div>  
+    </body>
+    </html>

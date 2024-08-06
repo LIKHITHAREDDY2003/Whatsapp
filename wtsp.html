@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        body {
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: center; /* Center the flex container horizontally */
+            align-items: center; /* Center the flex container vertically */
+            height: 100vh;
+            overflow: hidden; /* Full viewport height */
+             /* Optional: light background for better visibility */
+        }
+        iframe {
+    display: block; /* Ensure it’s a block element */
+    border: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.total, .container {
+    overflow: hidden;
+}
+
+        .total {
+            display: flex;
+            width: 100%; 
+            height: 100%;
+           position: fixed;
+        }
+        .container {
+            border: 2px solid rgb(45, 215, 29); 
+            width: 300px; 
+            height: 500px; 
+            
+            margin-right: 1px;
+        }
+        .frm {
+            border: 1px solid #000; 
+            width: 350px; 
+            height: 500px;
+            background-color: #fff; 
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            height: 100%; 
+        }
+        .top {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .whats, .qr, .dot {
+            margin: 5px;
+        }
+        .cam {
+            margin: 1px;
+        }
+        .bar1 {
+            margin-top: 0px;
+            
+        }
+        .bar {
+            display: flex;
+            position: absolute;
+            z-index: 1;
+            top:60px;
+            
+            left:5px;
+        } */
+        .search2 {
+            width: 100%;
+            padding: 5px;
+        }
+        .contact {
+    width: 276px;
+    height: 60px;
+    
+    position: relative;
+    top:50px;
+    margin-left: 1px;
+   
+    padding: 10px;
+ 
+}
+
+
+.contact img {
+    position: absolute;
+    top: 10px;
+    border-radius: 50%;
+    width: 55px;
+    height: 60px;
+}
+
+
+.contact .n1, .contact .n2, .contact .n3, .contact .n4, .contact .n5 {
+    position: absolute;
+    top: 15px;
+    left: 80px;
+}
+
+.contact .t1, .contact .t2, .contact .t3, .contact .t4, .contact .t5 {
+    position: absolute;
+    top: 43px;
+    left: 110px;
+}
+
+.contact .tick, .contact .tick2, .contact .tick3, .contact .tick4, .contact .tick5 {
+    position: absolute;
+    top: 41px;
+    left: 80px;
+}
+
+.contact .d1, .contact .d2, .contact .d3, .contact .d4, .contact .d5 {
+    position: absolute;
+    top: 20px;
+    left: 240px;
+}
+
+     
+        a {
+            text-decoration: none; 
+            color: inherit;
+            display: block; 
+        }
+        .contact1:hover{
+            background-color:aliceblue;
+           
+        }
+        .contact2:hover{
+            background-color:aliceblue;
+           
+        }
+        .contact3:hover{
+            background-color:aliceblue;
+           
+        }
+        .contact4:hover{
+            background-color:aliceblue;
+           
+        }
+        .contact5:hover{
+            background-color:aliceblue;
+           
+        }
+        .all:hover{
+            background-color: aquamarine;
+        }
+        .unread:hover{
+            background-color: aquamarine;
+        }
+        .fav:hover{
+            background-color: aquamarine;
+        }
+        .group:hover{
+            background-color: aquamarine;
+        }
+        .all{
+    width: 40px;
+    height: 20px;
+    border: solid 2px rgb(184, 239, 184);
+   position: absolute;
+    left: 12px;
+    top:80px;
+    padding-left: 10px;
+    border-radius: 20px;
+    background-color: rgb(184, 239, 184);
+   
+
+}
+.unread{
+    width: 60px;
+    height: 20px;
+    border: solid 2px  rgb(246, 239, 239);
+    border-radius: 20px;
+    padding-left: 5px;
+    position: fixed;
+    
+    top:95px;
+    position:fixed;
+    left:70px;
+    background-color: rgb(184, 239, 184);
+
+}
+.fav{
+    width: 75px;
+    height: 20px;
+    border: solid 2px  rgb(246, 239, 239);
+    border-radius: 20px;
+    padding-left: 8px;
+    top: 95px;
+    position: fixed;
+    position: fixed;
+    left:140px;
+    background-color: rgb(184, 239, 184);
+
+}
+.group{
+    width: 60px;
+    height: 20px;
+    border: solid 2px  rgb(246, 239, 239);
+    border-radius: 20px;
+    padding-left: 5px;
+    margin-left: 16px;
+    top: 95px;
+    position: fixed;
+    left:210px;
+    background-color: rgb(184, 239, 184);
+
+}
+.c{
+    z-index: 2; 
+    position:absolute; 
+    top: 15px;
+    
+    left: 0;
+    width: 100%; 
+    background-color; 
+    padding: 10px;
+}
+
+.chat{
+    width: 30px;
+    height: 20px;
+
+    padding-left: 10px;
+    
+   
+    padding-top: 2px;
+    position: absolute;
+    bottom:17px;
+    
+    left: 10px;
+    z-index: 1;
+}
+.chat:hover{ 
+   background-color: rgb(195, 212, 214);
+}
+.update:hover{ 
+    background-color: rgb(195, 212, 214);
+}
+.com:hover{ 
+    background-color: rgb(195, 212, 214);
+    width:28px;
+}
+.call:hover{ 
+    background-color: rgb(195, 212, 214);
+    width:25px;
+}
+.a1{
+    position: absolute;
+    bottom:1px;
+    left:15px;
+    z-index: 1;
+
+}
+.update{
+    position: absolute;
+    bottom:18px;
+    left:80px;
+    z-index: 11;
+    width:30px;
+    height:20px;
+    border-radius: 25px;
+}
+.a2{
+    position: absolute;
+    bottom:1px;
+   
+    left:65px
+
+}
+.com{
+    position: absolute;
+    bottom:17px;
+    
+  
+    left:160px
+}
+.a3{
+    position: absolute;
+    bottom:1px;
+    
+    left:135px
+
+}
+.call{
+    position: absolute;
+    bottom:18px;
+   
+   
+    left:240px
+}
+.a4{
+    position: absolute;
+    bottom:1px;
+    
+    left:240px
+}
+.bottom1{
+    position:absolute;
+    border: 1px solid;
+    width:290px;
+    height: 58px;
+    bottom:134px;
+    z-index: 1;
+    background-color:#fff;
+    border-radius:20px;
+    
+
+}
+.meta{
+    position: absolute;
+    z-index: 1;
+    top:58px;
+    left: 220px;
+}
+    </style>
+</head>
+<body>
+    <div class="total">
+        <div class="container">
+            <div class="box">
+                <div class="top"> 
+                    <div class="whats" style="color: green ;font-size: xx-large;">Chats</div>
+                    <div class="qr"><i class="fa-solid fa-qrcode"></i></div>
+                    <div class="cam"><span class="material-symbols-outlined">photo_camera</span></div>
+                    <div class="dot"><i class="fa-solid fa-ellipsis-vertical"></i></div>       
+                </div>
+                <div class="bar1">
+                    <div class="bar">
+                        <input class="search2" type="text" placeholder="Ask meta al or search..." size="38">
+                       
+                    </div>
+                    <svg class="meta" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="25" viewBox="0 0 48 48" >
+                        <path fill="#0081fb" d="M47,29.36l-2.193,1.663L42.62,29.5c0-0.16,0-0.33-0.01-0.5c0-0.16,0-0.33-0.01-0.5	c-0.14-3.94-1.14-8.16-3.14-11.25c-1.54-2.37-3.51-3.5-5.71-3.5c-2.31,0-4.19,1.38-6.27,4.38c-0.06,0.09-0.13,0.18-0.19,0.28	c-0.04,0.05-0.07,0.1-0.11,0.16c-0.1,0.15-0.2,0.3-0.3,0.46c-0.9,1.4-1.84,3.03-2.86,4.83c-0.09,0.17-0.19,0.34-0.28,0.51	c-0.03,0.04-0.06,0.09-0.08,0.13l-0.21,0.37l-1.24,2.19c-2.91,5.15-3.65,6.33-5.1,8.26C14.56,38.71,12.38,40,9.51,40	c-3.4,0-5.56-1.47-6.89-3.69C1.53,34.51,1,32.14,1,29.44l4.97,0.17c0,1.76,0.38,3.1,0.89,3.92C7.52,34.59,8.49,35,9.5,35	c1.29,0,2.49-0.27,4.77-3.43c1.83-2.53,3.99-6.07,5.44-8.3l1.37-2.09l0.29-0.46l0.3-0.45l0.5-0.77c0.76-1.16,1.58-2.39,2.46-3.57	c0.1-0.14,0.2-0.28,0.31-0.42c0.1-0.14,0.21-0.28,0.31-0.41c0.9-1.15,1.85-2.22,2.87-3.1c1.85-1.61,3.84-2.5,5.85-2.5	c3.37,0,6.58,1.95,9.04,5.61c2.51,3.74,3.82,8.4,3.97,13.25c0.01,0.16,0.01,0.33,0.01,0.5C47,29.03,47,29.19,47,29.36z"></path><linearGradient id="wSMw7pqi7WIWHewz2_TZXa_PvvcWRWxRKSR_gr1" x1="42.304" x2="13.533" y1="24.75" y2="24.75" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0081fb"></stop><stop offset=".995" stop-color="#0064e1"></stop></linearGradient><path fill="url(#wSMw7pqi7WIWHewz2_TZXa_PvvcWRWxRKSR_gr1)" d="M4.918,15.456	C7.195,11.951,10.483,9.5,14.253,9.5c2.184,0,4.354,0.645,6.621,2.493c2.479,2.02,5.122,5.346,8.419,10.828l1.182,1.967	c2.854,4.746,4.477,7.187,5.428,8.339C37.125,34.606,37.888,35,39,35c2.82,0,3.617-2.54,3.617-5.501L47,29.362	c0,3.095-0.611,5.369-1.651,7.165C44.345,38.264,42.387,40,39.093,40c-2.048,0-3.862-0.444-5.868-2.333	c-1.542-1.45-3.345-4.026-4.732-6.341l-4.126-6.879c-2.07-3.452-3.969-6.027-5.068-7.192c-1.182-1.254-2.642-2.754-5.067-2.754	c-1.963,0-3.689,1.362-5.084,3.465L4.918,15.456z"></path><linearGradient id="wSMw7pqi7WIWHewz2_TZXb_PvvcWRWxRKSR_gr2" x1="7.635" x2="7.635" y1="32.87" y2="13.012" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0081fb"></stop><stop offset=".995" stop-color="#0064e1"></stop></linearGradient><path fill="url(#wSMw7pqi7WIWHewz2_TZXb_PvvcWRWxRKSR_gr2)" d="M14.25,14.5	c-1.959,0-3.683,1.362-5.075,3.465C7.206,20.937,6,25.363,6,29.614c0,1.753-0.003,3.072,0.5,3.886l-3.84,2.813	C1.574,34.507,1,32.2,1,29.5c0-4.91,1.355-10.091,3.918-14.044C7.192,11.951,10.507,9.5,14.27,9.5L14.25,14.5z"></path><path d="M21.67,20.27l-0.3,0.45l-0.29,0.46c0.71,1.03,1.52,2.27,2.37,3.69l0.21-0.37c0.02-0.04,0.05-0.09,0.08-0.13 c0.09-0.17,0.19-0.34,0.28-0.51C23.19,22.5,22.39,21.29,21.67,20.27z M24.94,15.51c-0.11,0.14-0.21,0.28-0.31,0.42 c0.73,0.91,1.47,1.94,2.25,3.1c0.1-0.16,0.2-0.31,0.3-0.46c0.04-0.06,0.07-0.11,0.11-0.16c0.06-0.1,0.13-0.19,0.19-0.28 c-0.76-1.12-1.5-2.13-2.23-3.03C25.15,15.23,25.04,15.37,24.94,15.51z" opacity=".05"></path><path d="M21.67,20.27l-0.3,0.45c0.71,1.02,1.51,2.24,2.37,3.65c0.09-0.17,0.19-0.34,0.28-0.51C23.19,22.5,22.39,21.29,21.67,20.27 z M24.63,15.93c0.73,0.91,1.47,1.94,2.25,3.1c0.1-0.16,0.2-0.31,0.3-0.46c-0.77-1.14-1.52-2.16-2.24-3.06 C24.83,15.65,24.73,15.79,24.63,15.93z" opacity=".07"></path>
+                        </svg>
+                </div>
+                <div class="c">
+                    <div class="all">All</div>
+                    <div class="unread">Unread</div>
+                    <div class="fav">Favourites</div>
+                    <div class="group">Groups</div>
+                </div>
+                <a href="./bunny.html"  target=load >
+                    <div class="contact contact1">
+                        <img class="img" src="./bunnyimage.jpg" width="55px" height="60">
+                        <div class="n1">Bunny&#128127;</div>
+                        <span class="material-symbols-outlined tick2">done_all</span>
+                        <div class="t1">Bye ra....</div>
+                        <div class="d1">12:45</div>
+                    </div>
+                </a>
+                <a href="./dad.html"  target=load >
+                <div class="contact contact2">
+                    <img class="img2" src="./dadimage.jpg" width="55px" height="60">
+                    <div class="n2">Dad&#127757;</div>
+                    <span class="material-symbols-outlined tick">done_all</span>
+                    <div class="t2">Bye Dad....</div>
+                    <div class="d2">12:46</div>
+                </div>
+                </a>
+                <a href="./mum.html"  target=load >
+                <div class="contact contact3">
+                    <img class="img3" src="./blue.jpg" width="55px" height="60">
+                    <div class="n3">Mummy&#128150;</div>
+                    <span class="material-symbols-outlined tick3">done_all</span>
+                    <div class="t3">Bye Mummy....</div>
+                    <div class="d3">12:04</div>
+                </div>
+                </a>
+                <a href="./alluarjun.html"  target=load >
+                <div class="contact contact4">
+                    <img class="img4" src="https://wallpaperaccess.com/full/2349659.jpg" width="55px" height="60">
+                    <div class="n4">Alluarjun&#128152;</div>
+                    <span class="material-symbols-outlined tick4">done_all</span>
+                    <div class="t4">Bye bunny....</div>
+                    <div class="d4">12:45</div>
+                </div>
+                </a>
+                
+                
+                <div class="bottom1">
+                 <div class="bottom"> 
+                    <div class="chat"><i class="fa-solid fa-message"></i></div>
+                    <div class="a1">chats</div>
+                    <div class="update"><i class="fa-regular fa-comment"></i></div>
+                    <div class="a2">updates</div>
+                    <div class="com"><i class="fa-solid fa-people-group"></i></div>
+                    <div class="a3">communities</div>
+                    <div class="call"><i class="fa-solid fa-phone"></i></div>
+                    <div class="a4">call</div>       
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="frm">
+            <iframe scrolling="no" src="./alluarjun.html"name=load style="width: 100%; height: 100%;  color:aqua;"></iframe>
+        </div>
+    </div>
+</body>
+</html>
